@@ -9,5 +9,5 @@ array=(
 
 for var in "${array[@]}"
 do
-    nohup python3 run.py ${var} &
+    nohup python3 play/opt.py ${var} &
 done

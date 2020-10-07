@@ -1,4 +1,7 @@
 import sys
+sys.path.append("../")
+import os
+os.chdir("../")
 from DQN import opt_test
 from setproctitle import setproctitle, getproctitle
 import tensorflow as tf
@@ -7,7 +10,7 @@ config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
 session = tf.Session(config=config)
 tensorflow_backend.set_session(session)
 
-setproctitle("proc-oishi")
+setproctitle("proc-yourname")
 
 args = list(map(lambda x:float(x) if "." in x else int(x),sys.argv[1:]))
 args.extend([args[0],"outside_aug_2019"])
