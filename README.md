@@ -1,3 +1,12 @@
+## ダウンロード
+
+研究するPC(linux)上で以下を実行
+
+```bash
+git clone https://github.com/spark856/consensus_build_using_RL
+```
+
+
 ## 動かすために必要なこと
 
 1. 次ページのライブラリを一通りいれる
