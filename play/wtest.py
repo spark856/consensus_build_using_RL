@@ -1,11 +1,11 @@
 import sys
 sys.path.append("../")
-import os
-os.chdir("../")
 from DQN import wtest
 from setproctitle import setproctitle, getproctitle
 import tensorflow as tf
 from keras.backend import tensorflow_backend
+import os
+os.chdir("../")
 config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
 session = tf.Session(config=config)
 tensorflow_backend.set_session(session)

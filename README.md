@@ -9,14 +9,12 @@ git clone https://github.com/spark856/consensus_build_using_RL
 
 ## 動かすために必要なこと
 
-1. pipenvを入れる。  
-    https://rinatz.github.io/python-book/ch04-05-pipenv/  
-    以下のライブラリ導入ではpipではなく、pipenvを使うようにする。(プロジェクトごとのライブラリ管理のため)
+pipenvがうまくいかないようなので、pip3で入れましょう。
 
-2. 次ページのライブラリを一通りいれる  
+1. 次ページのライブラリを一通りいれる  
     https://qiita.com/inoory/items/e63ade6f21766c7c2393
 
-3. tensorflow,matpoltlibの導入  
+2. tensorflow,matpoltlibの導入  
 
 
 

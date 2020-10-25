@@ -17,21 +17,21 @@ class cobuenv(gym.Env):
     light_hist = []
     total_step = 0
     
-"""
-初期化関数
-a: 消費電力の重み
-b: ユーザ満足度の重み
-c: bad値を-cとする(good,normalは常に1,0)
-d: 無効(外気温の重みだったが、aに統合した)
+    """
+    初期化関数
+    a: 消費電力の重み
+    b: ユーザ満足度の重み
+    c: bad値を-cとする(good,normalは常に1,0)
+    d: 無効(外気温の重みだったが、aに統合した)
 
-gamma: 強化学習の割引率
-outname: 外気温ファイルの名前
-demand_name: ユーザパターンの名前
-test: テストモード(ファイル書き込みなど)
-const: 一定値制御モード
-opt: 最適制御モード(1:最適制御,6:従来手法)
+    gamma: 強化学習の割引率
+    outname: 外気温ファイルの名前
+    demand_name: ユーザパターンの名前
+    test: テストモード(ファイル書き込みなど)
+    const: 一定値制御モード
+    opt: 最適制御モード(1:最適制御,6:従来手法)
 
-"""
+    """
     def __init__(self,a,b,c,d,gamma,outname,demand_name,test=False,const=False,opt=0):
         super().__init__()
         #人数

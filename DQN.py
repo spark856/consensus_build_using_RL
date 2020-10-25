@@ -8,6 +8,7 @@ from rl.agents.dqn import DQNAgent
 from rl.policy import EpsGreedyQPolicy
 from rl.memory import SequentialMemory
 import matplotlib.pyplot as plt
+from myenv.myenv4 import cobuenv
 
 #学習する関数
 def run(a,b,c,d,gamma,steps,outname,demand_name):
